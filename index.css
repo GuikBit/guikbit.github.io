@@ -1,0 +1,198 @@
+
+
+.react:hover {
+    
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    
+    &:hover {
+        filter: contrast(1.1);
+    }
+    
+    &:active {
+        filter: contrast(0.9);
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #00D8FF;
+        transition: all .5s;
+        animation: clippath 5s infinite linear;
+        border-radius: 1.5rem;
+    }
+    
+    &::after {
+        animation: clippath 5s infinite -2.5s linear;
+    }
+}
+
+.java:hover {
+    
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    
+    &:hover {
+        filter: contrast(1.1);
+    }
+    
+    &:active {
+        filter: contrast(0.9);
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #DB380E;
+        transition: all .5s;
+        animation: clippath 5s infinite linear;
+        border-radius: 1.5rem;
+    }
+    
+    &::after {
+        animation: clippath 5s infinite -2.5s linear;
+    }
+}
+
+.csharp:hover {
+    
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    
+    &:hover {
+        filter: contrast(1.1);
+    }
+    
+    &:active {
+        filter: contrast(0.9);
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #9B4F96;
+        transition: all .5s;
+        animation: clippath 5s infinite linear;
+        border-radius: 1.5rem;
+    }
+    
+    &::after {
+        animation: clippath 5s infinite -2.5s linear;
+    }
+}
+
+.angular:hover {
+    
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    
+    &:hover {
+        filter: contrast(1.1);
+    }
+    
+    &:active {
+        filter: contrast(0.9);
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #F11653;
+        transition: all .5s;
+        animation: clippath 5s infinite linear;
+        border-radius: 1.5rem;
+    }
+    
+    &::after {
+        animation: clippath 5s infinite -2.5s linear;
+    }
+}
+
+
+.php:hover {
+    
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    
+    &:hover {
+        filter: contrast(1.1);
+    }
+    
+    &:active {
+        filter: contrast(0.9);
+    }
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        border: 2px solid #777BB3;
+        transition: all .5s;
+        animation: clippath 5s infinite linear;
+        border-radius: 1.5rem;
+    }
+    
+    &::after {
+        animation: clippath 5s infinite -2.5s linear;
+    }
+}
+
+nav a.active {
+    color: #F10200
+}
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 98% 0);
+    }
+    
+    25% {
+        clip-path: inset(0 98% 0 0);
+    }
+    50% {
+        clip-path: inset(98% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 98%);
+    }
+}

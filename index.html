@@ -7,41 +7,47 @@
   <title>Guikbit</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body class="bg-stone-100 text-gray-900 ">
-  <!-- Cabeçalho -->
-  <header class="bg-gray-900 text-white p-5 ">
-    <div class="container mx-auto flex justify-between items-center">
+
+  <header class="bg-gray-900 text-white p-5 sticky top-0 z-10 shadow-2xl">
+    <div class="container mx-auto flex justify-between items-center px-16 ">
       <h1 class="text-3xl font-mono font-bold text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  GuikBit <span class="text-[#F10200]">/></span></h1>
       <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#about" class="text-[#B4B4B4] hover:text-[#F10200]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
-          <li><a href="#skills" class="text-[#B4B4B4] hover:text-[#F10200]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
-          <li><a href="#projects" class="text-[#B4B4B4] hover:text-[#F10200]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
-          <li><a href="#contact" class="text-[#B4B4B4] hover:text-[#F10200]"><i class="fas fa-at mr-2"></i>Contato</a></li>
+        <ul class="flex space-x-10">
+          <li><a href="#sobre" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
+          <li><a href="#skills" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
+          <li><a href="#projetos" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
+          <li><a href="#contatos" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-at mr-2"></i>Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Seção Sobre Mim -->
-  <section id="about" class="mx-auto my-16 p-8 h-[31rem]">
-    <h2 class="text-4xl font-bold mb-4">Sobre Mim</h2>
-    <p class="text-lg leading-relaxed">
-      Olá, meu nome é Guilherme e sou desenvolvedor com experiência em diversas linguagens e frameworks, como Java, C#, PHP, React, Angular, etc. Tenho paixão por criar soluções elegantes e eficientes através da programação.
-    </p>
+  <section id="sobre" class="mx-auto my-16 p-8 h-[31rem]">
+    <h2 class="text-4xl font-mono font-bold text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  Sobre min <span class="text-[#F10200]">/></span></h2>
+    <div class="container flex">
+  		<div class="shape col-8">
+         
+      </div>
+     
+		</div>
+    <div flex="col-6">
+      <p class="text-lg leading-relaxed">
+        Olá, meu nome é Guilherme e sou desenvolvedor com experiência em diversas linguagens e frameworks, como Java, C#, PHP, React, Angular, etc. Tenho paixão por criar soluções elegantes e eficientes através da programação.
+      </p>
+    </div>
   </section>
 
-
-
-  <!-- Seção de Habilidades -->
-  <section id="skills" class="container mx-auto my-16 py-8 px-6 bg-[#000]">
-    <h2 class="text-4xl font-bold mt-6 mb-20 text-center text-[#B4B4B4]">Habilidades</h2>
+  <section id="skills" class="container mx-auto pb-20 py-8 px-6 bg-[#000]">
     
-    <div class="justify-around content-around h-2/3 ">
+      <h2 class="text-4xl font-bold font-mono mt-6 mb-20 text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  Habilidades <span class="text-[#F10200]">/></span></h2>
+      
       <div class="flex justify-around">
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#DB380E] hover:via-[#DB380E] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="java w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#DB380E] hover:via-[#DB380E] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" width="100">
           </div>
@@ -49,7 +55,7 @@
             <span class="text-white text-5xl">J</span><span class="text-[#DB380E] text-5xl">a</span><span class="text-white text-5xl">va</span>
           </div>
         </div>
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#9B4F96] hover:via-[#9B4F96] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="csharp w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#9B4F96] hover:via-[#9B4F96] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://suprasys.com.br/wp-content/uploads/2017/10/c.png" alt="C#" width="100">
           </div>
@@ -57,7 +63,7 @@
             <span class="text-[#9B4F96] text-5xl">C</span><span class="text-white text-5xl">#</span>
           </div>
         </div>
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#777BB3] hover:via-[#777BB3] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="php w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#777BB3] hover:via-[#777BB3] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="React" width="100">
           </div>
@@ -69,7 +75,7 @@
       </div>
   
       <div class="flex justify-around mt-20">
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90%  shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="react w-1/4 rounded-3xl h-72 content-center  bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90%  shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" width="100">
           </div>
@@ -77,7 +83,7 @@
             <span class="text-white text-5xl">R</span><span class="text-[#00D8FF] text-5xl">e</span><span class="text-white text-5xl">act</span>
           </div>
         </div>
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="react w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" width="100">
           </div>
@@ -85,7 +91,7 @@
             <span class="text-white text-5xl">R</span><span class="text-[#00D8FF] text-5xl">e</span><span class="text-white text-5xl">act</span> <span class="text-white text-5xl ml-3">Nat</span><span class="text-[#00D8FF] text-5xl">i</span><span class="text-white text-5xl">ve</span>
           </div>
         </div>
-        <div class="w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#E90464] hover:via-[#E90464] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl hover:bg-blue-200 transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="angular w-1/4 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#E90464] hover:via-[#E90464] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center content-center">
             <img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Angular" width="90">
           </div>
@@ -94,34 +100,37 @@
           </div>
         </div>
       </div>
-    </div>
-    
 
   </section>
 
-    <!-- Seção de Projetos -->
-    <section id="projects" class="bg-white py-16">
-      <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12">Projetos</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Projeto 1 -->
-          <div class="bg-gray-200 p-5 rounded-lg shadow-lg">
-            <img src="[URL da Imagem]" alt="Projeto 1" class="rounded-lg mb-4">
-            <h3 class="text-2xl font-semibold mb-2">Projeto 1</h3>
-            <p class="text-gray-700 mb-4">Descrição do projeto. O que foi feito, quais tecnologias foram usadas.</p>
-            <a href="#" class="text-blue-500 hover:underline">Ver mais</a>
+  <section id="projetos" class="py-16 h-[41rem] bg-gray-900">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold font-mono mt-6 mb-20 text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  Projetos <span class="text-[#F10200]">/></span></h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <!-- Projeto 1 -->
+        <div class="p-5 draw rounded-lg shadow-lg bg-[#171717]">
+          <div class="flex">
+            <img src="https://unifor.br/documents/392178/0/gerenciamento+de+projetosbanner+site.png/5e8c43f1-e497-320b-b365-3333ba685456?t=1546972702995" alt="Projeto 1" class="rounded-lg mb-4" width="200">
+            <div class="content-center justify-center">
+              <h3 class="text-[#B4B4B4] text-2xl text-center font-semibold mb-2">Projeto 1</h3>
+            </div>
           </div>
-          <!-- Outros Projetos... -->
+          <p class="text-[#B4B4B4] mb-4">Descrição do projeto. O que foi feito, quais tecnologias foram usadas.</p>
+          <a href="#" class="text-blue-500 hover:underline">Ver mais</a>
         </div>
-      </div>
-    </section>
 
-  <!-- Contato -->
-  <section id="contact" class="bg-gray-900 text-white py-16">
+        <!-- Outros Projetos... -->
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contatos" class="bg-[#000] text-white py-16">
     <div class="container mx-auto text-center">
       <h2 class="text-4xl font-bold mb-4">Contato</h2>
       <p class="mb-4">Vamos nos conectar! Entre em contato através das redes sociais ou envie-me um email.</p>
-      <div class="flex justify-center space-x-6">
+      <div class="flex justify-center space-x-6 ">
         <a href="#" class="text-3xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
         <a href="#" class="text-3xl hover:text-blue-400"><i class="fab fa-github"></i></a>
         <a href="#" class="text-3xl hover:text-blue-400"><i class="fas fa-envelope"></i></a>
@@ -129,7 +138,6 @@
     </div>
   </section>
 
-  <!-- Rodapé -->
   <footer class="bg-gray-800 text-gray-400 py-6">
     <div class="container mx-auto text-center">
       <p>&copy; 2024 GuikBit. Todos os direitos reservados.</p>
@@ -137,5 +145,27 @@
   </footer>
 
 </body>
+<script>
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
 
+  // Configura o IntersectionObserver para monitorar as seções
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Remove a classe 'active' de todos os links de navegação
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Adiciona a classe 'active' ao link correspondente
+        const id = entry.target.getAttribute('id');
+        document.querySelector(`nav a[href="#${id}"]`).classList.add('active');
+      }
+    });
+  }, { threshold: 0.7 }); // Threshold define quanto da seção precisa estar visível (70% neste caso)
+
+  // Observa cada seção
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 </html>
