@@ -140,7 +140,6 @@
     }
 }
 
-
 .php:hover {
     
     text-align: center;
@@ -179,6 +178,16 @@
 nav a.active {
     color: #F10200
 }
+
+.mobile-menu {
+    display: none;
+}
+  
+.web-menu {
+    display: flex;
+}
+
+
 
 @keyframes clippath {
     0%,
