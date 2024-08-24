@@ -25,10 +25,10 @@
       </button>
       <nav class="hidden lg:block">
         <ul class="flex space-x-10">
-          <li><a href="#sobre" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
-          <li><a href="#skills" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
-          <li><a href="#projetos" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
-          <li><a href="#contatos" class="text-[#B4B4B4] underline font-semibold hover:font-semibold hover:text-[#F10200]"><i class="fas fa-at mr-2"></i>Contato</a></li>
+          <li><a href="#sobre" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
+          <li><a href="#skills" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
+          <li><a href="#projetos" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
+          <li><a href="#contatos" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-at mr-2"></i>Contato</a></li>
         </ul>
       </nav>
       
@@ -48,23 +48,53 @@
     </nav>
   </header>
 
-  <section id="sobre" class="mx-auto my-16 p-8 h-[31rem]">
-    <h2 class="text-4xl font-mono font-bold text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  Sobre min <span class="text-[#F10200]">/></span></h2>
-    <div class="container flex">
-  		<div class="shape col-8">
-         
+  <section id="sobre" class="container p-8 h-[44rem]">
+    <h2 class="text-4xl font-mono font-bold text-[#B4B4B4]">
+      <span class=" text-[#F10200]"><</span> Sobre min <span class="text-[#F10200]">/></span>
+    </h2>
+    <div class="grid grid-cols-2">
+      <div>
+        <p class="text-lg">
+          Olá, meu nome é Guilherme e sou desenvolvedor com experiência em diversas linguagens e frameworks, como Java, C#, PHP, React, Angular, etc. Tenho paixão por criar soluções elegantes e eficientes através da programação.
+        </p>
       </div>
-     
-		</div>
-    <div flex="col-6">
-      <p class="text-lg leading-relaxed">
-        Olá, meu nome é Guilherme e sou desenvolvedor com experiência em diversas linguagens e frameworks, como Java, C#, PHP, React, Angular, etc. Tenho paixão por criar soluções elegantes e eficientes através da programação.
-      </p>
+      <div>
+        <ul class="sobre-lista">
+          <li style="--accent-color:#41516C" class="w-[29rem]">
+            <div class="date">2002</div>
+            <div class="shadow rounded-xl">
+              <div class="title">Title 1</div>
+              <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+            </div>
+          </li>
+          <li style="--accent-color:#FBCA3E" class="w-[29rem]">
+            <div class="date">2007</div>
+            <div class="shadow rounded-xl">
+              <div class="title">Title 2</div>
+              <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
+            </div>
+          </li>
+          <li style="--accent-color:#E24A68" class="w-[29rem]">
+            <div class="date">2012</div>
+            <div class="shadow rounded-xl">
+              <div class="title">Title 3</div>
+              <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+            </div>
+          </li>
+          <li style="--accent-color:#1B5F8C" class="w-[29rem]">
+            <div class="date">2017</div>
+            <div class="shadow rounded-xl">
+              <div class="title">Title 4</div>
+              <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-
-  <section id="skills" class="py-20 bg-[#000]">
-    
+  
+  <section id="skills" class="py-20 bg-[#000] animate" >
+    <div class="container mx-auto">
       <h2 class="text-4xl font-bold font-mono mb-20 text-center text-[#B4B4B4]"> <span class=" text-[#F10200]"><</span>  Habilidades <span class="text-[#F10200]">/></span></h2>
       
       <div class="flex flex-wrap justify-center md:justify-around gap-4">
@@ -101,7 +131,7 @@
       
   
       <div class="flex flex-wrap justify-center md:justify-around gap-4 mt-20 sm:mt-10">
-        <div class="react w-full md:w-1/4 sm:w-5/6 mb-6 mx-6 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90%  shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+        <div class="react  w-full md:w-1/4 sm:w-5/6 mb-6 mx-6 h-72 content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90%  shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
           <div class="flex justify-center">
             <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" width="100">
           </div>
@@ -126,7 +156,7 @@
           </div>
         </div>
       </div>
-
+    </div>
   </section>
 
   <section id="projetos" class="py-16 h-[41rem] bg-gray-900">
@@ -135,7 +165,7 @@
       
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
         <!-- Projeto 1 -->
-        <div class="p-5 draw rounded-lg shadow-lg bg-[#171717]">
+        <div class="p-5 animate rounded-lg shadow-lg bg-[#171717]">
           <div class="flex">
             <img src="https://unifor.br/documents/392178/0/gerenciamento+de+projetosbanner+site.png/5e8c43f1-e497-320b-b365-3333ba685456?t=1546972702995" alt="Projeto 1" class="rounded-lg mb-4" width="200">
             <div class="content-center justify-center">
@@ -215,5 +245,18 @@ document.getElementById('menu-button-close').addEventListener('click', function(
     mobileMenu.classList.add('hidden');
   }
 })
+
+const elementsToFadeInUpOnScroll = document.querySelectorAll(".animate");
+if (elementsToFadeInUpOnScroll) {
+  window.addEventListener("scroll", function(event) {
+    elementsToFadeInUpOnScroll.forEach(function(element) {
+      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+        element.classList.add("fade-in-up");
+      } else {
+        element.classList.remove("fade-in-up");
+      }
+    });
+  });
+}
 </script>
 </html>
