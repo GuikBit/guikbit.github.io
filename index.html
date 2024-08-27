@@ -26,6 +26,7 @@
       <nav class="hidden lg:block">
         <ul class="flex space-x-10">
           <li><a href="#sobre" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
+          <li><a href="#experiencias" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-briefcase mr-2"></i>Experiências</a></li>
           <li><a href="#skills" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
           <li><a href="#projetos" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
           <li><a href="#contatos" class="text-[#B4B4B4] font-bold hover:font-bold hover:text-[#F10200]"><i class="fas fa-at mr-2"></i>Contato</a></li>
@@ -58,7 +59,11 @@
       </p>
     </div>
 
-    <div class=" bg-gray-900 p-8">
+
+
+  </section>
+  <section id="experiencias">
+    <div class="bg-gray-900 p-8">
 
       <div class="text-center">
         <span class="text-[#F10200] text-2xl font-mono font-bold ">
@@ -97,7 +102,6 @@
         </li>
       </ul>
     </div>
-
   </section>
   
   <section id="skills" class="py-20 bg-[#000] " >    
@@ -253,86 +257,67 @@
 
 </body>
 <script>
+  // Seleciona seções e links de navegação
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav a');
 
-  // Configura o IntersectionObserver para monitorar as seções
+  // Função para alternar visibilidade do menu
+  function toggleMenu(menuId, showClass, hideClass) {
+    const menu = document.getElementById(menuId);
+    menu.classList.toggle(hideClass);
+    menu.classList.toggle(showClass);
+  }
+
+  // Observa as seções e define o link ativo
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Remove a classe 'active' de todos os links de navegação
         navLinks.forEach(link => link.classList.remove('active'));
-
-        // Adiciona a classe 'active' ao link correspondente
-        const id = entry.target.getAttribute('id');
-        document.querySelector(`nav a[href="#${id}"]`).classList.add('active');
+        document.querySelector(`nav a[href="#${entry.target.id}"]`).classList.add('active');
       }
     });
-  }, { threshold: 0.7 }); // Threshold define quanto da seção precisa estar visível (70% neste caso)
+  }, { threshold: 0.7 });
 
-  // Observa cada seção
-  sections.forEach(section => {
-    observer.observe(section);
-  });
+  // Aplica o observador a cada seção
+  sections.forEach(section => observer.observe(section));
 
-  document.getElementById('menu-button').addEventListener('click', function() {
-  var mobileMenu = document.getElementById('mobile-menu');
-  if (mobileMenu.classList.contains('hidden')) {
-    mobileMenu.classList.remove('hidden');
-    mobileMenu.classList.add('show');
-  } else {
-    mobileMenu.classList.remove('show');
-    mobileMenu.classList.add('hidden');
-  }
-});
+  // Manipuladores de eventos para abrir e fechar o menu
+  document.getElementById('menu-button').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
+  document.getElementById('menu-button-close').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
 
-document.getElementById('menu-button-close').addEventListener('click', function() {
-  var mobileMenu = document.getElementById('mobile-menu');
-  if (mobileMenu.classList.contains('hidden')) {
-    mobileMenu.classList.remove('hidden');
-    mobileMenu.classList.add('show');
-  } else {
-    mobileMenu.classList.remove('show');
-    mobileMenu.classList.add('hidden');
-  }
-})
+  // Seleciona os elementos para animações
+  const animationConfig = [
+    { elements: document.querySelectorAll(".animate"), fadeIn: "fade-in-up", fadeOut: "fade-out-down" },
+    { elements: document.querySelectorAll(".animateLeft"), fadeIn: "fade-in-left", fadeOut: "fade-out-left" },
+    { elements: document.querySelectorAll(".animateRight"), fadeIn: "fade-in-right", fadeOut: "fade-out-right" },
+    { elements: document.querySelectorAll(".animateFadeIn"), fadeIn: "fade-in", fadeOut: "fade-out" }
+  ];
 
-const elementsToFadeInUpOnScroll = document.querySelectorAll(".animate");
-const elementsToFadeInLeftOnScroll = document.querySelectorAll(".animateLeft");
-const elementsToFadeInRightOnScroll = document.querySelectorAll(".animateRight");
-const elementsToFadeInOnScroll = document.querySelectorAll(".animateFadeIn");
+  let lastScrollY = window.scrollY;
 
-let lastScrollY = window.scrollY;
+  window.addEventListener("scroll", function() {
+    const currentScrollY = window.scrollY;
+    const isScrollingDown = currentScrollY > lastScrollY;
 
-window.addEventListener("scroll", function(event) {
-  let currentScrollY = window.scrollY;
-  let isScrollingDown = currentScrollY > lastScrollY;
-
-  // Função para lidar com a remoção e reaplicação das animações
-  function handleAnimation(elements, fadeInClass, fadeOutClass) {
-    elements.forEach(function(element) {
-      if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
-        if (isScrollingDown) {
-          element.classList.add(fadeInClass);
-          element.classList.remove(fadeOutClass);
+    // Função para tratar animações
+    animationConfig.forEach(config => {
+      config.elements.forEach(element => {
+        if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
+          if (isScrollingDown) {
+            element.classList.add(config.fadeIn);
+            element.classList.remove(config.fadeOut);
+          } else {
+            element.classList.add(config.fadeOut);
+            element.classList.remove(config.fadeIn);
+          }
         } else {
-          element.classList.add(fadeOutClass);
-          element.classList.remove(fadeInClass);
+          element.classList.remove(config.fadeIn, config.fadeOut);
         }
-      } else {
-        element.classList.remove(fadeInClass, fadeOutClass);
-      }
+      });
     });
-  }
 
-  // Aplicando as animações para diferentes direções
-  handleAnimation(elementsToFadeInUpOnScroll, "fade-in-up", "fade-out-down");
-  handleAnimation(elementsToFadeInLeftOnScroll, "fade-in-left", "fade-out-left");
-  handleAnimation(elementsToFadeInRightOnScroll, "fade-in-right", "fade-out-right");
-  handleAnimation(elementsToFadeInOnScroll, "fade-in", "fade-out");
-
-  lastScrollY = currentScrollY;
-});
-
+    lastScrollY = currentScrollY;
+  });
 </script>
+
 </html>
