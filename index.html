@@ -110,7 +110,7 @@
 
         <div class="border-2-2 absolute border-opacity-20 border-white h-5/6 border lg:inset-x-2/4"></div>
         <!-- right timeline -->
-        <div class="mb-8 flex justify-between items-center w-full right-timeline relative">
+        <div class="mb-8 flex justify-between items-center w-full right-timeline animateRight">
           <div class="order-1 w-5/12 hidden lg:block"></div>
           <div class="flex justify-center absolute lg:relative -left-4 lg:left-5 items-center order-1 bg-[#fff] shadow-xl w-8 h-8 rounded-full ">
             <i class="fas fa-briefcase text-[#053545]"></i>
@@ -144,7 +144,7 @@
           </div>
         </div>
         <!-- left timeline -->
-        <div class="mb-8 flex justify-between lg:flex-row-reverse items-center w-full lg:left-timeline ">
+        <div class="mb-8 flex justify-between lg:flex-row-reverse items-center w-full left-timeline animateLeft">
           <div class="order-1 w-5/12 hidden lg:block"></div>
           <div class="flex justify-center items-center absolute lg:relative left-3 lg:-left-8  order-1 bg-[#fff] shadow-xl w-8 h-8 rounded-full ">
             <i class="fas fa-briefcase text-[#053545]"></i>
@@ -185,16 +185,16 @@
   
   <section id="skills" class="flex justify-center items-center bg-[#0E0D11] " >    
     <div class="container p-8">
-      <div class="text-center mb-20">
+      <div class="mb-20">
         <span class="text-[#D31336] text-2xl font-mono font-bold ">
-          &lt; <span class="text-[#ebfffe]">Competências</span> /&gt;
+          &lt; <span class="text-[#ebfffe]">Competências</span> &gt;
         </span>
       </div>
   
-      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-24 justify-items-center mx-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-24 justify-items-center sm:mx-6">
         
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="java w-full h-full content-center rounded-3xl  bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#DB380E] hover:via-[#DB380E] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="java w-full h-full content-center rounded-3xl  bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#DB380E] hover:via-[#DB380E] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#420c08] hover:shadow-lg hover:shadow-[#420c08] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center ">
               <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" width="100">
             </div>
@@ -205,7 +205,7 @@
         </div>
         
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="csharp w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#9B4F96] hover:via-[#9B4F96] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="csharp w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#9B4F96] hover:via-[#9B4F96] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#3a1836] hover:shadow-lg hover:shadow-[#3a1836] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center">
               <img src="https://suprasys.com.br/wp-content/uploads/2017/10/c.png" alt="C#" width="100">
             </div>
@@ -216,7 +216,7 @@
         </div>
         
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="php w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#777BB3] hover:via-[#777BB3] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="php w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#777BB3] hover:via-[#777BB3] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#2a2b3c] hover:shadow-lg hover:shadow-[#2a2b3c] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center">
               <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP" width="100">
             </div>
@@ -227,7 +227,7 @@
         </div>
       
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="react w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90%  shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="react w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#053247] hover:shadow-lg hover:shadow-[#053247] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center">
               <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" width="100">
             </div>
@@ -238,7 +238,7 @@
         </div>
   
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="react w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="react w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#087496] hover:via-[#087496] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#053247] hover:shadow-lg hover:shadow-[#053247] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center">
               <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" width="100">
             </div>
@@ -249,7 +249,7 @@
         </div>
         
         <div class="animateFadeIn card w-3/4 h-72 rounded-3xl">
-          <div class="angular w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#E90464] hover:via-[#E90464] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md hover:shadow-xl transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
+          <div class="angular w-full h-full content-center rounded-3xl bg-gradient-to-br from-[#171717] hover:from-[#1F1F1F] from-70% via-[#E90464] hover:via-[#E90464] via-80% to-[#171717] hover:to-[#1F1F1F] to-90% shadow-md shadow-[#5d001f] hover:shadow-lg hover:shadow-[#5d001f] transition ease-in-out delay-75 hover:-translate-x-0.5 hover:scale-110 duration-300">
             <div class="flex justify-center">
               <img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="Angular" width="90">
             </div>
@@ -259,6 +259,12 @@
           </div>
         </div>
       
+      </div>
+
+      <div class="mt-20">
+        <span class="text-[#D31336] text-2xl font-mono font-bold ">
+          &lt; <span class="text-[#ebfffe]">Competências</span> /&gt;
+        </span>
       </div>
     </div>  
 
@@ -368,37 +374,41 @@
 
   // Seleciona os elementos para animações
   const animationConfig = [
-    { elements: document.querySelectorAll(".animate"), fadeIn: "fade-in-up", fadeOut: "fade-out-down" },
-    { elements: document.querySelectorAll(".animateLeft"), fadeIn: "fade-in-left", fadeOut: "fade-out-left" },
-    { elements: document.querySelectorAll(".animateRight"), fadeIn: "fade-in-right", fadeOut: "fade-out-right" },
-    { elements: document.querySelectorAll(".animateFadeIn"), fadeIn: "fade-in", fadeOut: "fade-out" }
-  ];
+  { elements: document.querySelectorAll(".animate"), fadeIn: "fade-in-up", fadeOut: "fade-out-down" },
+  { elements: document.querySelectorAll(".animateLeft"), fadeIn: "fade-in-left", fadeOut: "fade-out-left" },
+  { elements: document.querySelectorAll(".animateRight"), fadeIn: "fade-in-right", fadeOut: "fade-out-right" },
+  { elements: document.querySelectorAll(".animateFadeIn"), fadeIn: "fade-in", fadeOut: "fade-out" }
+]; 
 
-  let lastScrollY = window.scrollY;
+let lastScrollY = window.scrollY;
 
-  window.addEventListener("scroll", function() {
-    const currentScrollY = window.scrollY;
-    const isScrollingDown = currentScrollY > lastScrollY;
+window.addEventListener("scroll", function() {
+  const currentScrollY = window.scrollY;
+  const isScrollingDown = currentScrollY > lastScrollY;
 
-    // Função para tratar animações
-    animationConfig.forEach(config => {
-      config.elements.forEach(element => {
-        if (window.scrollY >= (element.offsetTop - window.innerHeight)) {
-          if (isScrollingDown) {
-            element.classList.add(config.fadeIn);
-            element.classList.remove(config.fadeOut);
-          } else {
-            element.classList.add(config.fadeOut);
-            element.classList.remove(config.fadeIn);
-          }
-        } else {
-          element.classList.remove(config.fadeIn, config.fadeOut);
-        }
-      });
+  animationConfig.forEach(config => {
+    config.elements.forEach(element => {
+      // Verifica se o elemento está na tela ou prestes a entrar
+      const elementTop = element.offsetTop;
+      const elementHeight = element.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      // Verifica se o elemento entrou na tela ao descer
+      if (currentScrollY + windowHeight >= elementTop && isScrollingDown) {
+        element.classList.add(config.fadeIn);
+        //element.classList.remove(config.fadeOut);
+      }
+      // Remove a animação ao subir a tela ou se o elemento sair da tela
+       else if (currentScrollY + windowHeight < elementTop + elementHeight && !isScrollingDown) {
+      //   element.classList.add(config.fadeOut);
+         element.classList.remove(config.fadeIn);
+      }
     });
-
-    lastScrollY = currentScrollY;
   });
+
+  lastScrollY = currentScrollY;
+});
+
 </script>
 
 </html>
