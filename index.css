@@ -415,3 +415,8 @@ nav a.active {
         clip-path: inset(0 0 0 98%);
     }
 }
+
+.relative:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
