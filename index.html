@@ -191,7 +191,7 @@
     </div>
   </section>
   <section id="experiencias" class="py-16 flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
-     <div class="container md:min-h-[52rem] sm:h-auto py-8">
+     <div class="container md:min-h-[52rem] sm:h-auto p-8">
 
       <div class="lg:px-8">
         <span class="text-[#fdbb03] text-2xl font-mono font-bold ">
@@ -238,9 +238,9 @@
 
       <div class="wrap relative overflow-hidden py-10 pl-7 sm:pl-7 h-full">
 
-        <div class="border-2-2 absolute border-opacity-50 border-[#18183A] h-5/6 border lg:inset-x-2/4"></div>
+        <div class="border-2-2 absolute border-opacity-50 border-[#18183A] dark:border-[#ffffff90] h-5/6 border lg:inset-x-2/4"></div>
         <!-- right timeline -->
-        <div class="mb-8 flex justify-between items-center w-full right-timeline">          
+        <div class=" mb-8 flex justify-between items-center w-full right-timeline">          
           <div class="order-1 w-5/12 hidden lg:block"></div>
           <div class="flex justify-center items-center absolute lg:relative left-3 sm:left-3 md:left-3 lg:left-5 2xl:left-9 order-1 bg-[#fdbb03] shadow-xl w-8 h-8 rounded-full ">
             <i class="fas fa-briefcase text-[#18183A]"></i>
@@ -286,7 +286,7 @@
           </div>
         </div>
         <!-- left timeline -->
-        <div class="mb-8 flex justify-between lg:flex-row-reverse items-center w-full left-timeline">
+        <div class=" mb-8 flex justify-between lg:flex-row-reverse items-center w-full left-timeline">
           <div class="order-1 w-5/12 hidden lg:block"></div>
           <div class="flex justify-center items-center absolute lg:relative left-3 sm:left-3 lg:-left-12 2xl:-left-16 -left-8  order-1 bg-[#fdbb03] shadow-xl w-8 h-8 rounded-full ">
             <i class="fas fa-briefcase text-[#18183A]"></i>
@@ -340,7 +340,7 @@
   </section>
   
   <section id="skills" class="py-16 flex justify-center items-center dark:bg-[#04162E] bg-[#0C3D68]" >    
-    <div class="container py-8 lg:px-8 ">
+    <div class="container p-8 ">
       <div class="mb-20">
         <span class="text-[#fdbb03] text-2xl font-mono font-bold ">
           &lt; <span class="text-[#ebfffe]">Competências</span> &gt;
@@ -486,7 +486,7 @@
   </section>
   <!-- md:min-h-[52rem] sm: -->
   <section id="projetos" class="py-16 h-auto dark:bg-[#0B0D0C] bg-[#D5D5D5]">
-    <div class="container mx-auto lg:p-8">
+    <div class="container mx-auto p-8">
       <div class="mb-20">
         <span class="text-[#fdbb03] text-2xl font-mono font-bold ">
           &lt; <span class="text-[#ebfffe]">Projetos</span> &gt;
@@ -638,9 +638,9 @@
   // Aplica o observador a cada seção
   sections.forEach(section => observer.observe(section));
 
-  // Manipuladores de eventos para abrir e fechar o menu
-  document.getElementById('menu-button').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
-  document.getElementById('menu-button-close').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
+  // // Manipuladores de eventos para abrir e fechar o menu
+  // document.getElementById('menu-button').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
+  // document.getElementById('menu-button-close').addEventListener('click', () => toggleMenu('mobile-menu', 'show', 'hidden'));
 
   // Seleciona os elementos para animações
   const animationConfig = [
@@ -679,9 +679,6 @@ window.addEventListener("scroll", function() {
   lastScrollY = currentScrollY;
 });
 
-</script>
-
-<script>
   const themeToggleBtn = document.getElementById("theme-toggle");
   const darkIcon = document.getElementById("theme-toggle-dark-icon");
   const lightIcon = document.getElementById("theme-toggle-light-icon");
