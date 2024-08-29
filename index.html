@@ -26,84 +26,22 @@
 </head>
 
 <body class="bg-stone-100 text-gray-900 ">
-
-  <!-- <header class="bg-gradient-to-r from-[#06141B] via-[#053545] to-[#125367] p-6 sticky top-0 z-10 shadow-2xl">
-    <div class="container mx-auto flex justify-between items-center ">
-      
+  <!-- from-[#06141B] via-[#053545] to-[#125367]  -->
+  <header class="bg-gradient-to-r from-[#18183A] via-[#0C3D68]  to-[#125367] p-4 sticky top-0 z-10 shadow-2xl ">
+    <div class="container px-10 flex justify-between items-center ">
+  
       <div>
-        <span class="text-[#D31336] text-3xl font-mono font-bold">
-          &lt; <span class="text-[#ebfffe]">GuikBit</span> &gt;
+        <span class="text-[#fdbb03] text-2xl lg:text-3xl font-mono font-bold">
+          &lt; <span class="text-[#fff]">GuikBit</span> &gt;
         </span>
       </div>
-    
       
-
-      <div class=" hidden lg:block flex bg-blue-200">
-          <div>
-            <nav class="">
-              <ul class="flex space-x-8">
-                <li><a href="#sobre" class="text-[#ebfffe] font-bold hover:font-bold hover:text-[#a1f9ff]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
-                <li><a href="#experiencias" class="text-[#ebfffe] font-bold hover:font-bold hover:text-[#a1f9ff]"><i class="fas fa-briefcase mr-2"></i>Experiências</a></li>
-                <li><a href="#skills" class="text-[#ebfffe] font-bold hover:font-bold hover:text-[#a1f9ff]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
-                <li><a href="#projetos" class="text-[#ebfffe] font-bold hover:font-bold hover:text-[#a1f9ff]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
-                <li><a href="#contatos" class="text-[#ebfffe] font-bold hover:font-bold hover:text-[#a1f9ff]"><i class="fas fa-at mr-2"></i>Contato</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div>
-            lg:hidden block
-          </div>
-      </div>
-
-
-      
-      <div class="flex lg:hidden block">
-        <div class="">
-          <button id="theme-toggle" class=" mr-6 text-[#ebfffe] dark:text-[#ebfffe] hover:bg-[#053647] dark:hover:bg-[#053647] outline-none ring-2 ring-[#ebfffe] dark:ring-[#ebfffe] rounded-lg text-sm p-2.5">
-            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-            </svg>
-            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        </div>
-        
-        <div class="">
-          <button class="text-white ring-2 ring-[#ebfffe] rounded-lg text-sm py-2.5 px-3.5" id="menu-button">
-            <i class="fas fa-bars "></i>
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-    <nav id="mobile-menu" class="lg:hidden fixed inset-0 bg-gray-900 bg-opacity-75 z-20 hidden">
-      <button class="text-white absolute top-10 right-10" id="menu-button-close">
-        <i class="fas fa-close mr-2 text-2xl"></i>
+      <button id="theme-toggle" class="bg-white dark:bg-transparent hover:bg-gray-200 outline-none ring-2 ring-[#ebfffe] rounded-lg py-1.5 px-3">
+        <span id="theme-toggle-dark-icon"><i class="bi bi-sun-fill text-sm text-[#fdbb03] lg:text-base"></i></span>
+        <span id="theme-toggle-light-icon"><i class="bi bi-moon-stars-fill text-[#18183A]  text-sm lg:text-base"></i></span>
       </button>
-      <div class="flex flex-col items-center justify-center h-full">
-        <ul class="space-y-6 text-white text-xl">
-          <li><a id="menu-button-close" href="#sobre" class="hover:text-[#bf93f9]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
-          <li><a id="menu-button-close" href="#experiencias" class="hover:text-[#bf93f9]"><i class="fas fa-briefcase mr-2"></i>Experiências</a></li>
-          <li><a id="menu-button-close" href="#skills" class="hover:text-[#bf93f9]"><i class="fas fa-lightbulb mr-2"></i>Habilidades</a></li>
-          <li><a id="menu-button-close" href="#projetos" class="hover:text-[#bf93f9]"><i class="fas fa-gear mr-2"></i>Projetos</a></li>
-          <li><a id="menu-button-close" href="#contatos" class="hover:text-[#bf93f9]"><i class="fas fa-at mr-2"></i>Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header> -->
 
-  <header class="bg-gradient-to-r from-[#06141B] via-[#053545] to-[#125367] p-4 sticky top-0 z-10 shadow-2xl">
-    <div class="container mx-auto flex justify-between items-center">
-  
-      <div>
-        <span class="text-[#D31336] text-2xl lg:text-3xl font-mono font-bold">
-          &lt; <span class="text-[#ebfffe]">GuikBit</span> &gt;
-        </span>
-      </div>
-  
-      <div class="flex space-x-5 lg:space-x-8 items-center">
+      <!-- <div class="flex space-x-5 lg:space-x-8 items-center">
         <nav class="hidden lg:block">
           <ul class="flex space-x-8">
             <li><a href="#sobre" class="text-[#ebfffe] font-bold hover:text-[#a1f9ff]"><i class="fas fa-user mr-2"></i>Sobre Mim</a></li>
@@ -122,11 +60,11 @@
         <button id="menu-button" class="lg:hidden hover:bg-[#053647] block text-white ring-2 ring-[#ebfffe] rounded-lg py-1.5 px-3">
           <i class="fas fa-bars text-sm"></i>
         </button>
-      </div>
+      </div> -->
   
     </div>
   
-    <nav id="mobile-menu" class="lg:hidden fixed inset-0 bg-gray-950 bg-opacity-75 z-20 hidden">
+    <!-- <nav id="mobile-menu" class="lg:hidden fixed inset-0 bg-gray-950 bg-opacity-75 z-20 hidden">
       <button class="text-[#ebfffe] absolute top-4 right-4 ring-2 ring-[#ebfffe] rounded-lg py-1.5 px-3" id="menu-button-close">
         <i class="fas fa-close "></i>
       </button>
@@ -139,29 +77,80 @@
           <li><a id="menu-button-close" href="#contatos" class="hover:text-[#a1f9ff]"><i class="fas fa-at mr-2"></i>Contato</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
   </header>
   
 
-  <section id="sobre" class="flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
-    <div class="h-[52rem] container p-8 bg-[#EDEDF0] dark:bg-[#101211]">
+  <section id="home" class="flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
+
+    <div class="container p-8 bg-[#fff6f7] dark:bg-[#0B0D0C]">
+      <div class="h-[52rem]">
+        <div class="flex justify-center items-center lg:mb-24 mb-10 mt-2">
+          <span class="text-5xl lg:text-7xl text-center font-black text-transparent bg-clip-text bg-gradient-to-r from-[#18183A] dark:from-[#ebfffe] from-55% dark:from-40% to-[#077d97] dark:to-[#fdbb03] to-85% dark:to-85%">
+            Desenvolvedor Full <span class="text-[#fdbb03]">Stack</span>
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:h-[23rem] h-[40rem]">
+          <div class="relative  bg-gradient-to-br from-[#18183A] via-[#1C1C45]  to-[#0C3D68] h-full lg:rounded-[70px] rounded-[45px] shadow-md shadow-[#000000ac]">
+            <a href="#sobre">
+              <div class="absolute bottom-8 h-7 w-full px-16 flex justify-between items-center">
+              
+                <span class="font-bold text-white text-xl">Sobre mim</span>             
+                <span class="font-bold text-white text-2xl"><i class="bi bi-person-fill"></i></span>
+              
+              </div>
+            </a>
+          </div>
+          <div class="h-[19rem] lg:h-[23rem]">
+            <div class="grid grid-cols-2 gap-4 h-full ">
+              <div class=" bg-gradient-to-r from-[#fdbb03] relative from-55% to-[#fdbb03] col-span-2 lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
+                <a href="#projetos">
+                  <div class="absolute bottom-8 h-7 w-full px-12 flex justify-between items-center">
+                  
+                    <span class="font-bold text-[#18183A] text-lg">Projetos</span>
+                    <span class="font-bold text-[#18183A] text-2xl"><i class="bi bi-person-workspace"></i></span>
+                 
+                  </div>
+                </a>
+              </div>
+              <div class="bg-[#0C3D68] relative lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
+                <a href="#contatos">
+                  <div class="absolute bottom-8 h-7 w-full lg:px-12 px-5 flex justify-between items-center">
+                  
+                    <span class="font-bold text-white text-lg">Experiências</span>
+                    <span class="font-bold text-white text-lg"><i class="bi bi-briefcase-fill"></i></span>
+                 
+                  </div>
+                </a>
+              </div>
+              <div class="bg-[#0C3D68] lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac] relative">
+                <a href="#contatos">
+                  <div class="absolute bottom-8 h-7 w-full lg:px-12 px-5 flex justify-between items-center">
+                  
+                    <span class="font-bold text-white text-lg">Contatos</span>
+                    <span class="font-bold text-white text-lg"><i class="bi bi-send-fill"></i></span>
+                 
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+      </div>
       <span class="text-[#D31336] text-2xl font-mono font-bold">
         &lt; <span class="dark:text-[#ebfffe] text-black">Sobre mim</span> /&gt;
-      </span>
-      <p class="text-lg dark:text-[#B4B4B4] text-black">
-        Olá, meu nome é Guilherme e sou desenvolvedor com experiência em diversas linguagens e frameworks, como Java, C#, PHP, React, Angular, etc. Tenho paixão por criar soluções elegantes e eficientes através da programação.
-      </p>
-      <div class="bg-white text-black dark:bg-gray-900 dark:text-white">
-        <div class="p-6">
-          <h1 class="text-2xl font-bold">Dark Mode com Tailwind CSS</h1>
-          <button onclick="toggleDarkMode()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
-            Alternar Dark Mode
-          </button>
-        </div>
+      </span>     
+    </div>
+    
+  </section>
+  <section id="sobre" class="flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
+    <div class="container p-8 bg-[#fff6f7] dark:bg-[#0B0D0C]">
+      <div class="h-[52rem]">
       </div>
     </div>
   </section>
-
   <section id="experiencias" class="flex justify-center items-center dark:bg-[#053545] bg-[#009cba]">
      <div class="container md:min-h-[52rem] sm:h-auto py-8">
 
