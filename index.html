@@ -85,11 +85,22 @@
 
     <div class="container bg-[#fff6f7] dark:bg-[#0B0D0C]">
       <div class="h-[48rem] lg:px-10 lg:py-8 px-2 py-8">
-        <div class="flex justify-center items-center lg:mb-24 mb-16">
-          <span class="text-5xl lg:text-7xl text-center font-black text-transparent bg-clip-text bg-gradient-to-r from-[#18183A] dark:from-[#ebfffe] from-55% dark:from-40% to-[#077d97] dark:to-[#fdbb03] to-85% dark:to-85%">
-            Desenvolvedor Full <span class="text-[#fdbb03]">Stack</span>
+        <div class="lg:mb-12 mb-14 fontTitulo">
+          <div class="flex justify-center items-center"> <!-- font-black text-transparent bg-clip-text bg-gradient-to-r from-[#18183A] dark:from-[#ebfffe] from-55% dark:from-40% to-[#077d97] dark:to-[#fdbb03] to-85% dark:to-85% -->
+            <span class="text-5xl lg:text-7xl text-center font-black text-[#18183A] dark:text-[#ebfffe]">
+              Desenvolvedor 
+            </span>
+          </div><br>
+          <div class="flex justify-center items-center">
+            <span
+            class="txt-rotate text-5xl lg:text-7xl text-center font-black text-[#0C3D68]"
+            data-period="2000"
+            data-rotate='["Front-End", "Back-End", "Full Stack"]'>
           </span>
+          </div>
+          
         </div>
+
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:h-[23rem] h-[40rem]">
           <div class="sobreMim relative bg-gradient-to-br from-[#18183A] dark:from-[#082849] via-[#082849] dark:via-[#082849] to-[#0C3D68] dark:to-[#0C3D68] h-full lg:rounded-[70px] rounded-[45px] shadow-md shadow-[#000000ac]">
@@ -665,5 +676,56 @@ window.addEventListener("scroll", function() {
       darkIcon.classList.toggle('hidden', !isDarkMode);
       lightIcon.classList.toggle('hidden', isDarkMode);
   });
+
+  class TxtRotate {
+    constructor(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.isDeleting = false;
+      this.tick();
+    }
+
+    tick() {
+      const i = this.loopNum % this.toRotate.length;
+      const fullTxt = this.toRotate[i];
+      const colorClass = i < 2 ? 'text-[#0C3D68] dark:text-[#ebfffe]' : 'text-[#fdbb03]';
+
+      this.txt = this.isDeleting
+        ? fullTxt.substring(0, this.txt.length - 1)
+        : fullTxt.substring(0, this.txt.length + 1);
+
+      this.el.innerHTML = `<span class="wrap ${colorClass}">${this.txt}</span>`;
+
+      let delta = 300 - Math.random() * 100;
+      delta = this.isDeleting ? delta / 2 : delta;
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(() => this.tick(), delta);
+    }
+  }
+
+  window.onload = function() {
+    document.querySelectorAll('.txt-rotate').forEach(el => {
+      const toRotate = JSON.parse(el.getAttribute('data-rotate'));
+      const period = el.getAttribute('data-period');
+      new TxtRotate(el, toRotate, period);
+    });
+
+    // INJECT CSS
+    const css = document.createElement("style");
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.head.appendChild(css);
+  };
 </script>
 </html>

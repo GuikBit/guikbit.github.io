@@ -178,6 +178,9 @@ nav a.active {
     color: #60f2ff
 }
 
+.fontTitulo{
+  font-family: 'Raleway', sans-serif;
+}
 .mobile-menu {
     display: none;
 }
