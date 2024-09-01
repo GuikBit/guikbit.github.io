@@ -81,11 +81,11 @@
   </header>
   
 
-  <section id="home" class="flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
+  <section id="home" class="flex justify-center items-center bg-[#fff6f7] dark:bg-[#0B0D0C]">
 
     <div class="container bg-[#fff6f7] dark:bg-[#0B0D0C]">
-      <div class="h-[48rem] lg:px-10 lg:py-10 px-2 py-8">
-        <div class="lg:mb-12 mb-14 fontTitulo leading-none">
+      <div class="h-[53rem] lg:px-10 lg:py-10 px-2 py-8">
+        <div class="lg:mb-48 mb-14 fontTitulo leading-none">
           <div class="flex justify-center items-center"> <!-- font-black text-transparent bg-clip-text bg-gradient-to-r from-[#18183A] dark:from-[#ebfffe] from-55% dark:from-40% to-[#077d97] dark:to-[#fdbb03] to-85% dark:to-85% -->
             <span class="text-5xl lg:text-7xl text-center font-black text-[#18183A] dark:text-[#ebfffe]">
               Desenvolvedor 
@@ -102,7 +102,7 @@
 
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:h-[23rem] h-[40rem]">
-          <div class="sobreMim relative bg-gradient-to-br from-[#18183A] dark:from-[#082849] via-[#082849] dark:via-[#082849] to-[#0C3D68] dark:to-[#0C3D68] h-full lg:rounded-[70px] rounded-[45px] shadow-md shadow-[#000000ac]">
+          <div class="sobreMim fade-in relative bg-gradient-to-br from-[#18183A] dark:from-[#082849] via-[#082849] dark:via-[#082849] to-[#0C3D68] dark:to-[#0C3D68] h-full lg:rounded-[70px] rounded-[45px] shadow-md shadow-[#000000ac]">
             
             <img src="/img/carlos16.png" class="absolute top-5 left-10 z-30 lg:w-[200px] lg:h-[200px] w-[100px] h-[100px]" alt="Programer" >
             <img src="/img/circle2.png" alt="" class="absolute left-5 z-20 custom-sobre lg:w-[230px] lg:h-[265px] w-[140px] h-[164px]">
@@ -147,7 +147,7 @@
             
             <div class="grid grid-cols-2 gap-4 h-full ">
               
-                <div class="bg-gradient-to-r from-[#fdbb03] relative from-55% to-[#fdbb03] col-span-2 lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
+                <div class="bg-gradient-to-r fade-in from-[#fdbb03] relative from-55% to-[#fdbb03] col-span-2 lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
                   <a href="#projetos" class="">
                     <div class="absolute text-[#18183A] hover:text-[#0C3D68]  bottom-8 left-10 lg:left-0 h-7 w-3/6 lg:w-4/6 lg:px-12 pr-6 lg:pr-0 flex justify-between items-center">
                     
@@ -163,7 +163,7 @@
                   <img src="/img/fundo07.png" alt="" class="absolute right-1 -top-3 z-2 lg:w-[200px] lg:h-[200px] w-[170px] h-[170px]">
                 </div>
               
-              <div class="bg-[#0C3D68] relative lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
+              <div class="bg-[#0C3D68] fade-in relative lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac]">
                 <a href="#experiencias">
                   <div class="absolute text-white hover:text-[#D5D5D5] bottom-8 h-7 w-full lg:px-10 md:px-6 px-5 flex justify-between items-center">
                   
@@ -173,7 +173,7 @@
                   </div>
                 </a>
               </div>
-              <div class="bg-[#0C3D68] lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac] relative">
+              <div class="bg-[#0C3D68] fade-in lg:rounded-[55px] rounded-[45px] shadow-md shadow-[#000000ac] relative">
                 <a href="#contatos">
                   <div class="absolute text-white hover:text-[#D5D5D5] bottom-8 h-7 w-full lg:px-10 px-5 flex justify-between items-center">
                   
@@ -471,10 +471,10 @@
     <div class="container mx-auto lg:p-8">
       <div class="mb-20 px-8">
         <span class="text-[#fdbb03] text-2xl font-mono font-bold ">
-          &lt; <span class="dark:text-[#fff] text-black">Projetos</span> &gt;
+          &lt; <span class="text-[#fff] ">Projetos</span> &gt;
         </span>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10 mx-6">
 
         <!-- Projeto 1 -->
         <div class="animate max-w-md mx-auto dark:bg-[#1F1F1F] bg-[#fff] rounded-xl shadow-md overflow-hidden md:max-w-2xl">
@@ -495,6 +495,7 @@
                 <div class="flex flex-wrap gap-4 sm:gap-x-4">  
                   <span class="text-sm text-[#9B4F96] font-medium py-1 px-2 border-2 border-[#9B4F96] rounded-3xl">C#</span>
                   <span class="text-sm text-[#116EB6] font-medium py-1 px-2 border-2 border-[#116EB6] rounded-3xl">ASP.NET</span>
+                  <span class="text-sm text-[#7BEC4D] font-medium py-1 px-2 border-2 border-[#7BEC4D] rounded-3xl">Swagger</span>
                   <span class="text-sm text-[#F29111] font-medium py-1 px-2 border-2 border-[#F29111] rounded-3xl">MySQL</span>
                </div>
               </div>
@@ -550,14 +551,43 @@
                 <div class="flex flex-wrap gap-4 sm:gap-x-4">  
                   <span class="text-sm text-[#3178C6] font-medium py-1 px-2 border-2 border-[#3178C6]  rounded-3xl">TypeScript</span>
                   <span class="text-sm text-[#087496] font-medium py-1 px-2 border-2 border-[#087496] rounded-3xl">React Native</span>
-                  <span class="text-sm text-[#21005D] dark:text-[#9d76ff] font-medium py-1 px-2 border-2 border-[#21005D] dark:border-[#9d76ff] rounded-3xl">R.N. Paper</span>
                   <span class="text-sm text-[#000] dark:text-[#888888] font-medium py-1 px-2 border-2 border-[#000] dark:border-[#888888] rounded-3xl">Expo</span>
+                  <span class="text-sm text-[#21005D] dark:text-[#9d76ff] font-medium py-1 px-2 border-2 border-[#21005D] dark:border-[#9d76ff] rounded-3xl">React Native Paper</span>
+                  
                 </div>
               </div>
             </div>    
           </div>
         </div>
         <!-- Projeto 4  -->
+        <div class="animate max-w-md h-auto mx-auto dark:bg-[#1F1F1F] bg-[#fff] rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div class="md:flex relative">            
+            <div class="md:shrink-0">
+              <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://unifor.br/documents/392178/0/gerenciamento+de+projetosbanner+site.png/5e8c43f1-e497-320b-b365-3333ba685456?t=1546972702995" alt="Modern building architecture">
+            </div>
+            <div class="p-8">
+              <div>
+                <div class="uppercase tracking-wide text-sm text-indigo-500 dark:text-indigo-400 font-semibold">Projeto Corporativo - PluriSistemas</div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black dark:text-white hover:underline">SISMobile</a>
+                <p class="mt-2 text-slate-700 dark:text-[#dcdcdc]">O projeto visa atender a uma demanda não suprida dos clientes, com um aplicativo mobile fornecendo métricas essenciais sobre a empresa, além de funcionalidades inovadoras na operação empresarial. Tudo isso, de forma acessível, na palma da mão.</p>
+              </div>
+              <div class="">
+                <div class="mt-4 mb-3">
+                  <span class="text-base text-black dark:text-white font-semibold">Tecnologias: </span>
+                </div>
+                <div class="flex flex-wrap gap-4 sm:gap-x-4">  
+                  <span class="text-sm text-[#F7E018] font-medium py-1 px-2 border-2 border-[#F7E018]  rounded-3xl">JavaScript</span>
+                  <span class="text-sm text-[#087496] font-medium py-1 px-2 border-2 border-[#087496] rounded-3xl">React Native</span>
+                  <span class="text-sm text-[#000] dark:text-[#888888] font-medium py-1 px-2 border-2 border-[#000] dark:border-[#888888] rounded-3xl">Expo</span>
+                  <span class="text-sm text-[#21005D] dark:text-[#9d76ff] font-medium py-1 px-2 border-2 border-[#21005D] dark:border-[#9d76ff] rounded-3xl">React Native Paper</span>
+                  
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <!-- Porjeto 5 -->
         <div class="animate max-w-md mx-auto dark:bg-[#1F1F1F] bg-[#fff] rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex relative">            
             <div class="md:shrink-0">
@@ -565,9 +595,9 @@
             </div>
             <div class="p-8">
               <div>
-                <div class="uppercase tracking-wide text-sm text-indigo-500 dark:text-indigo-400 font-semibold">Projeto Pessoal</div>
-                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black dark:text-white hover:underline">OdontoSync | Mobile</a>
-                <p class="mt-2 text-slate-700 dark:text-[#dcdcdc]">O ecossistema OdontoSync também está ao seu alcance com um aplicativo móvel, projetado para pacientes, dentistas e funcionários. Ele oferece conforto, praticidade e funcionalidades exclusivas para cada tipo de usuário.</p>
+                <div class="uppercase tracking-wide text-sm text-indigo-500 dark:text-indigo-400 font-semibold">Projeto Corporativo - PluriSistemas</div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black dark:text-white hover:underline">SISFlow</a>
+                <p class="mt-2 text-slate-700 dark:text-[#dcdcdc]">O projeto tem como objetivo atender uma demanda interna da empresa, desenvolvendo uma plataforma simples, mas altamente eficiente e dinâmica para a configuração de fluxos de processos relacionados à telecomunicação.</p>
               </div>
               <div class="">
                 <div class="mt-4 mb-3">
@@ -575,9 +605,10 @@
                 </div>
                 <div class="flex flex-wrap gap-4 sm:gap-x-4">  
                   <span class="text-sm text-[#3178C6] font-medium py-1 px-2 border-2 border-[#3178C6]  rounded-3xl">TypeScript</span>
-                  <span class="text-sm text-[#087496] font-medium py-1 px-2 border-2 border-[#087496] rounded-3xl">React Native</span>
-                  <span class="text-sm text-[#21005D] dark:text-[#9d76ff] font-medium py-1 px-2 border-2 border-[#21005D] dark:border-[#9d76ff] rounded-3xl">R.N. Paper</span>
-                  <span class="text-sm text-[#000] dark:text-[#888888] font-medium py-1 px-2 border-2 border-[#000] dark:border-[#888888] rounded-3xl">Expo</span>
+                  <span class="text-sm text-[#61DAFB] font-medium py-1 px-2 border-2 border-[#61DAFB]  rounded-3xl">React</span>
+                  <span class="text-sm text-[#FF0072] font-medium py-1 px-2 border-2 border-[#FF0072]  rounded-3xl">React Flow</span>
+                  <span class="text-sm text-[#49AFB3] font-medium py-1 px-2 border-2 border-[#49AFB3]  rounded-3xl">Tailwind CSS</span>
+                  
                 </div>
               </div>
             </div>    
@@ -587,7 +618,7 @@
     </div>
     <div class="mt-20 px-8">
       <span class="text-[#fdbb03] text-2xl font-mono font-bold ">
-        &lt; <span class="dark:text-[#fff] text-black">Projetos</span> /&gt;
+        &lt; <span class="text-[#fff]">Projetos</span> /&gt;
       </span>
     </div>
   </section>
