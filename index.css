@@ -1,4 +1,21 @@
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 15px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #585858;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #323232;
+  border-radius: 50px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6e6e;
+}
 
 .react:hover {
     
