@@ -1,20 +1,22 @@
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
   border-radius: 15px;
+  background: #18183A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #585858;
+  background: #fdbb03;
   border-radius: 50px;
+  
 }
 
 ::-webkit-scrollbar-track {
-  background: #323232;
-  border-radius: 50px; 
+  background: #18183A;
+  
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6e6e6e;
+  background: #ffda1d;
 }
 
 .react:hover {
