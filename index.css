@@ -18,6 +18,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ffda1d;
 }
+/* .teste{
+
+    width: auto;          
+    height: auto;         
+    background-image: url('/img/teste2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  
+} */
 
 .react:hover {
     
@@ -366,6 +376,7 @@ nav a.active {
   animation: 0.75s both fadeInUp;
 }
 
+
 /* Fade In Left */
 @keyframes fadeInLeft {
   from {
@@ -396,6 +407,9 @@ nav a.active {
   animation: 0.65s both fadeInRight;
 }
 
+
+
+/* Definição da animação inicial */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -414,10 +428,13 @@ nav a.active {
     transform: scale(1); /* Retorna ao tamanho real */
   }
 }
-
-
 .fade-in {
   animation: fadeIn 0.6s both cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.3s ease-in-out; /* Suaviza a transformação no hover */
+}
+
+.fade-in-hover:hover {
+  transform: scale(1.05); 
 }
 
 @keyframes clippath {
@@ -472,6 +489,13 @@ nav a.active {
   opacity: 1;
   pointer-events: auto;
 }
+.sobreMim {
+  transition: transform 0.3s ease-in-out; /* Suaviza a transformação no hover */
+}
+
+.sobreMim:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho da div no hover */
+}
 
 
 .sobreMim .bubbles {
@@ -499,12 +523,12 @@ nav a.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: hsla(183, 94%, 76%, 0.3);
+  background: hsla(183, 94%, 76%, 0.25);
   border-radius: inherit;
   animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
 }
 
-/* Aqui, o loop @for do SCSS precisa ser escrito manualmente para cada bolha */
+
 .sobreMim .bubble:nth-child(1) {
   --bubble-left-offset: 10vw;
   --bubble-radius: 8vw;
@@ -525,29 +549,57 @@ nav a.active {
   --bubble-sway-type: sway-right-to-left;
 }
 
+.sobreMim .bubble:nth-child(3) {
+  --bubble-left-offset: 7vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 3.5s;
+  --bubble-float-delay: 2.5s;
+  --bubble-sway-delay: 3.5s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.sobreMim .bubble:nth-child(4) {
+  --bubble-left-offset: 1vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 5s;
+  --bubble-sway-duration: 3.5s;
+  --bubble-float-delay: 2.5s;
+  --bubble-sway-delay: 8.5s;
+  --bubble-sway-type: sway-right-to-left;
+}
+
+.sobreMim .bubble:nth-child(5) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 4.5s;
+  --bubble-float-delay: 0.5s;
+  --bubble-sway-delay: 2.5s;
+  --bubble-sway-type: sway-right-to-left;
+}
 /* Continue manualmente para cada bolha como no exemplo acima */
 
 /* Animações keyframes */
 @keyframes float-up {
   to {
-      transform: translateY(-175vh);
+      transform: translateY(-145vh);
   }
 }
 
 @keyframes sway-left-to-right {
   from {
-      transform: translateX(-100%);
+      transform: translateX(-20%);
   }
   to {
-      transform: translateX(100%);
+      transform: translateX(50%);
   }
 }
 
 @keyframes sway-right-to-left {
   from {
-      transform: translateX(100%);
+      transform: translateX(20%);
   }
   to {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
   }
 }
