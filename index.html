@@ -578,9 +578,17 @@ window.addEventListener("scroll", function() {
   const bubbles = document.querySelectorAll('.sobreMim .bubble');
 
   bubbles.forEach(bubble => {
-    const randomPosition = 5 + Math.random() * 90;
 
+    const randomPosition = 5 + Math.random() * 95;
     bubble.style.setProperty('--bubble-left-offset', `${randomPosition}%`);
+  });
+
+  bubbles.forEach(bubble => {
+    
+    setRandomPosition(bubble);
+    bubble.addEventListener('animationiteration', () => {
+      setRandomPosition(bubble);
+    });
   });
 
   window.onload = function() {

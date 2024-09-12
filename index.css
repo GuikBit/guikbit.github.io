@@ -593,11 +593,10 @@ nav a.active {
   /* border-radius: 50%; Pode ser removido se a imagem não precisar ser circular */
 }
 
-.sobreMim .bubble::before {
-  /* Remova o conteúdo do pseudo-elemento se não for mais necessário */
+/* .sobreMim .bubble::before {
   content: none;
   animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
-}
+} */
 
 /* Exemplo de como adicionar imagens para os bubbles */
 .sobreMim .bubble:nth-child(1) {
@@ -676,8 +675,11 @@ nav a.active {
 
 /* Animações keyframes */
 @keyframes float-up {
-  to {
-      transform: translateY(-145vh);
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh); /* Sai pela parte superior da tela */
   }
 }
 
