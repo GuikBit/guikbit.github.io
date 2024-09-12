@@ -601,7 +601,6 @@ nav a.active {
 
 /* Exemplo de como adicionar imagens para os bubbles */
 .sobreMim .bubble:nth-child(1) {
-  --bubble-left-offset: 13%;
   --bubble-radius: 8vw;
   --bubble-float-duration: 8s;
   --bubble-sway-duration: 5s;
@@ -614,7 +613,6 @@ nav a.active {
 }
 
 .sobreMim .bubble:nth-child(2) {
-  --bubble-left-offset: 21%;
   --bubble-radius: 6vw;
   --bubble-float-duration: 10s;
   --bubble-sway-duration: 6s;
@@ -627,7 +625,6 @@ nav a.active {
 }
 
 .sobreMim .bubble:nth-child(3) {
-  --bubble-left-offset: 47%;
   --bubble-radius: 6vw;
   --bubble-float-duration: 9s;
   --bubble-sway-duration: 4.5s;
@@ -640,7 +637,6 @@ nav a.active {
 }
 
 .sobreMim .bubble:nth-child(4) {
-  --bubble-left-offset: 59%;
   --bubble-radius: 5vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 3.5s;
@@ -653,7 +649,6 @@ nav a.active {
 }
 
 .sobreMim .bubble:nth-child(5) {
-  --bubble-left-offset: 83%;
   --bubble-radius: 5vw;
   --bubble-float-duration: 6.5s;
   --bubble-sway-duration: 3.5s;
@@ -666,7 +661,6 @@ nav a.active {
 }
 
 .sobreMim .bubble:nth-child(6) {
-  --bubble-left-offset: 37%;
   --bubble-radius: 6vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 4.5s;
