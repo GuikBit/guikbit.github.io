@@ -505,7 +505,7 @@ nav a.active {
   overflow: hidden;
 }
 
-.sobreMim .bubble {
+/* .sobreMim .bubble {
   position: absolute;
   left: var(--bubble-left-offset);
   bottom: -75%;
@@ -537,8 +537,9 @@ nav a.active {
   --bubble-float-delay: 0s;
   --bubble-sway-delay: 2s;
   --bubble-sway-type: sway-left-to-right;
-}
+} */
 
+/* 
 .sobreMim .bubble:nth-child(2) {
   --bubble-left-offset: 20vw;
   --bubble-radius: 6vw;
@@ -576,7 +577,107 @@ nav a.active {
   --bubble-float-delay: 0.5s;
   --bubble-sway-delay: 2.5s;
   --bubble-sway-type: sway-right-to-left;
+} */
+
+.sobreMim .bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; Pode ser removido se a imagem não precisar ser circular */
 }
+
+.sobreMim .bubble::before {
+  /* Remova o conteúdo do pseudo-elemento se não for mais necessário */
+  content: none;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+}
+
+/* Exemplo de como adicionar imagens para os bubbles */
+.sobreMim .bubble:nth-child(1) {
+  --bubble-left-offset: 10vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/angular.png');
+  
+  opacity: 0.9;
+}
+
+.sobreMim .bubble:nth-child(2) {
+  --bubble-left-offset: 30vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 6s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/cshap.png');
+  
+  opacity: 0.9;
+}
+
+.sobreMim .bubble:nth-child(3) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 4.5s;
+  --bubble-float-delay: 0.5s;
+  --bubble-sway-delay: 2.5s;
+  --bubble-sway-type: sway-right-to-left;
+  background-image: url('./img/expo.webp');
+  
+  opacity: 0.9;
+}
+
+.sobreMim .bubble:nth-child(4) {
+  --bubble-left-offset: 7vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 3.5s;
+  --bubble-float-delay: 2.5s;
+  --bubble-sway-delay: 3.5s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/Java.webp');
+  
+  opacity: 0.9;
+}
+
+.sobreMim .bubble:nth-child(5) {
+  --bubble-left-offset: 15vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 6.5s;
+  --bubble-sway-duration: 3.5s;
+  --bubble-float-delay: 2.5s;
+  --bubble-sway-delay: 8.5s;
+  --bubble-sway-type: sway-right-to-left;
+  background-image: url('./img/javascript.webp');
+  
+  opacity: 0.9;
+}
+
+.sobreMim .bubble:nth-child(6) {
+  --bubble-left-offset: 20vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 4.5s;
+  --bubble-float-delay: 0.5s;
+  --bubble-sway-delay: 1.5s;
+  --bubble-sway-type: sway-right-to-left;
+  background-image: url('./img/mysql-logo.png');
+  
+  opacity: 0.9;
+}
+
 /* Continue manualmente para cada bolha como no exemplo acima */
 
 /* Animações keyframes */
