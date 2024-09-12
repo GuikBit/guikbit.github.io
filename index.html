@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><Guikbit/></title>
+  <title>&lt; Guikbit /&gt;</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
@@ -77,6 +77,10 @@
             </div>
             
             <div class="bubbles lg:rounded-[70px] rounded-[45px]">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
               <div class="bubble"></div>
               <div class="bubble"></div>
               <div class="bubble"></div>
@@ -578,7 +582,7 @@ window.addEventListener("scroll", function() {
 
   bubbles.forEach(bubble => {
 
-    const randomPosition = 5 + Math.random() * 95;
+    const randomPosition = 15 + Math.random() * 75;
     bubble.style.setProperty('--bubble-left-offset', `${randomPosition}%`);
   });
 

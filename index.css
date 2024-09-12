@@ -601,10 +601,10 @@ nav a.active {
 /* Exemplo de como adicionar imagens para os bubbles */
 .sobreMim .bubble:nth-child(1) {
   --bubble-radius: 8vw;
-  --bubble-float-duration: 8s;
-  --bubble-sway-duration: 5s;
+  --bubble-float-duration: 15s;
+  --bubble-sway-duration: 10s;
   --bubble-float-delay: 0s;
-  --bubble-sway-delay: 2s;
+  --bubble-sway-delay: 1.2s;
   --bubble-sway-type: sway-left-to-right;
   background-image: url('./img/angular.png');
   
@@ -625,7 +625,7 @@ nav a.active {
 
 .sobreMim .bubble:nth-child(3) {
   --bubble-radius: 6vw;
-  --bubble-float-duration: 9s;
+  --bubble-float-duration: 18s;
   --bubble-sway-duration: 4.5s;
   --bubble-float-delay: 0.5s;
   --bubble-sway-delay: 2.5s;
@@ -649,7 +649,7 @@ nav a.active {
 
 .sobreMim .bubble:nth-child(5) {
   --bubble-radius: 5vw;
-  --bubble-float-duration: 6.5s;
+  --bubble-float-duration: 8.9s;
   --bubble-sway-duration: 3.5s;
   --bubble-float-delay: 2.5s;
   --bubble-sway-delay: 8.5s;
@@ -666,10 +666,47 @@ nav a.active {
   --bubble-float-delay: 0.5s;
   --bubble-sway-delay: 1.5s;
   --bubble-sway-type: sway-right-to-left;
-  background-image: url('./img/mysql-logo.png');
+  background-image: url('./img/mysql.png');
   
   opacity: 0.4;
 }
+
+.sobreMim .bubble:nth-child(7) {
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 15s;
+  --bubble-sway-duration: 1.5s;
+  --bubble-float-delay: 3.5s;
+  --bubble-sway-delay: 2.5s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/typescript.png');
+  
+  opacity: 0.4;
+}
+
+.sobreMim .bubble:nth-child(8) {
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 13s;
+  --bubble-sway-duration: 3.5s;
+  --bubble-float-delay: 0.1s;
+  --bubble-sway-delay: 1.1s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/react.webp');
+  
+  opacity: 0.4;
+}
+
+.sobreMim .bubble:nth-child(9) {
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 2.5s;
+  --bubble-float-delay: 3.1s;
+  --bubble-sway-delay: 1.1s;
+  --bubble-sway-type: sway-left-to-right;
+  background-image: url('./img/postgress.webp');
+  
+  opacity: 0.4;
+}
+
 
 /* Continue manualmente para cada bolha como no exemplo acima */
 
