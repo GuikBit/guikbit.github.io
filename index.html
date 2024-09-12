@@ -583,13 +583,13 @@ window.addEventListener("scroll", function() {
     bubble.style.setProperty('--bubble-left-offset', `${randomPosition}%`);
   });
 
-  bubbles.forEach(bubble => {
+  // bubbles.forEach(bubble => {
     
-    setRandomPosition(bubble);
-    bubble.addEventListener('animationiteration', () => {
-      setRandomPosition(bubble);
-    });
-  });
+  //   setRandomPosition(bubble);
+  //   bubble.addEventListener('animationiteration', () => {
+  //     setRandomPosition(bubble);
+  //   });
+  // });
 
   window.onload = function() {
     document.querySelectorAll('.txt-rotate').forEach(el => {
