@@ -575,6 +575,14 @@ window.addEventListener("scroll", function() {
     }
   }
 
+  const bubbles = document.querySelectorAll('.sobreMim .bubble');
+
+  bubbles.forEach(bubble => {
+    const randomPosition = 5 + Math.random() * 90;
+
+    bubble.style.setProperty('--bubble-left-offset', `${randomPosition}%`);
+  });
+
   window.onload = function() {
     document.querySelectorAll('.txt-rotate').forEach(el => {
       const toRotate = JSON.parse(el.getAttribute('data-rotate'));
