@@ -744,15 +744,13 @@ nav a.active {
 
 
 .folha {
-  border-top-left-radius: 37px 140px;
-  border-top-right-radius: 23px 130px;
-  border-bottom-left-radius: 110px 19px;
-  
-  border-bottom-right-radius: 190px 54px;
+  border-top-left-radius: 37px 50px;
+  border-top-right-radius: 190px 14px;
+  border-bottom-left-radius: 110px 19px;  
+  border-bottom-right-radius: 23px 130px;
   display: block;
   position: relative;
-  padding: 20px 20px;
-  max-width: 800px;
+  max-width: 850px;
   width: 90%;
   font-size: 17px;
   line-height: 28px;
@@ -761,40 +759,22 @@ nav a.active {
   transition: all 0.13s ease-in;
 }
 
-.folha:hover {
-  transform: translateY(-10px) rotate(1deg);
-  box-shadow: 3px 15px 8px -10px rgba(253, 187, 3, 0.6);
-}
-
-.folha:hover .border {
-  transform: translateY(4px) rotate(-5deg);
-}
 
 .folha2 {
-  border-top-left-radius: 37px 10px;
+  border-top-left-radius: 110px 19px;
   border-top-right-radius: 13px 190px;
-  border-bottom-left-radius: 110px 19px;
+  border-bottom-left-radius: 37px 10px;
   border-bottom-right-radius: 120px 24px;
 
   display: block;
   position: relative;
-  padding: 20px 20px;
-  max-width: 800px;
-  width: 90%;
+  max-width: 850px;
+  width: 100%;
   font-size: 17px;
   line-height: 28px;
   transform: rotate(-1deg);
   box-shadow: 3px 15px 8px -10px rgba(253, 187, 3, 0.5);
   transition: all 0.13s ease-in;
-}
-
-.folha2:hover {
-  transform: translateY(-10px) rotate(1deg);
-  box-shadow: 3px 15px 8px -10px rgba(253, 187, 3, 0.6);
-}
-
-.folha2:hover .border {
-  transform: translateY(4px) rotate(-5deg);
 }
 
 .border {
@@ -807,4 +787,8 @@ nav a.active {
   color: #515d9c;
   font-size: 15px;
   position: absolute;
+}
+
+.boxShadow{
+  box-shadow: 3px 15px 8px -10px rgba(253, 187, 3, 0.5);
 }

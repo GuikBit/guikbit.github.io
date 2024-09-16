@@ -26,7 +26,7 @@
 
 </head>
 
-<body class="bg-stone-100 text-gray-900 ">
+<body class="bg-stone-100 text-gray-900 static ">
   <!-- from-[#06141B] via-[#053545] to-[#125367]  -->
   <header class="bg-gradient-to-r from-[#18183A] via-[#0C3D68]  to-[#125367] p-4 sticky top-0 z-40 shadow-2xl ">
     <div class="container lg:px-10 px-4 flex justify-between items-center ">
@@ -43,7 +43,6 @@
       </button>
     </div>
   </header>
-  
 
   <section id="home" class="flex justify-center items-center bg-[#fff6f7] dark:bg-[#0B0D0C]">
 
@@ -145,6 +144,7 @@
     </div>
 
   </section>
+
   <section id="sobre" class="flex justify-center items-center dark:bg-[#04162E] bg-[#0C3D68]">
     <div class="container h-auto">
       <div class="py-16 px-8">
@@ -207,10 +207,14 @@
                 <span class="font-bold text-lg text-[#fdbb03] ml-10"><i class="bi bi-mortarboard-fill"></i></span>
               </div>
               <div class="flex justify-center mt-10">
-              <div class="folha  text-white pl-10 relative dark:bg-[#0C3D68] bg-[#04162E] px-4">
+              <div class="folha  text-[#18183A] dark:text-white pl-10 relative dark:bg-[#454545] bg-[#e7e7e7]   p-8 animateLeft">
                 <div class="absolute top-3 right-6">
                   <i class="bi  bi-clock-history text-amber-500"></i>
                   <span class="text-amber-500">Em andamento</span>
+                </div>
+                <div class="absolute bottom-5 right-10">
+                  <img src="/img/logo-puc-minas.png" alt="PUC Minas" class="hidden dark:block w-[100px] h-auto">
+                  <img src="/img/puc_minas.png" alt="PUC Minas" class="dark:hidden block w-[90px] h-auto">
                 </div>
                 <div>
                   <span class=" font-bold italic text-lg">- Pós-Graduação</span>
@@ -230,10 +234,14 @@
               </div>
               </div>
               <div class="flex justify-center my-10">
-                <div class="folha2 text-white pl-10 relative dark:bg-[#0C3D68] bg-[#04162E] px-4">
+                <div class="folha2 text-[#18183A] dark:text-white pl-10 relative dark:bg-[#454545] bg-[#e7e7e7]  p-8 animateRight">
                   <div class="absolute top-3 right-6">
                     <i class="bi bi-check-circle-fill text-green-500"></i>
                     <span class="text-green-500">Concluído</span>
+                  </div>
+                  <div class="absolute bottom-5 right-10">
+                    <img src="/img/logo_vianna_novo_w.png" alt="Vianna Júnior" class="hidden dark:block w-[120px] h-auto">
+                    <img src="/img/logo_vianna_novo.png" alt="Vianna Júnior" class="dark:hidden block w-[120px] h-auto">
                   </div>
                   <div>
                     <span class=" font-bold italic text-lg">- Graduação</span>
@@ -257,7 +265,7 @@
           </div>
           <div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10 mx-6 mt-14">
-              <div class="col-6">
+              <div class="col-6 animateLeft">
                 <div class="flex justify-center">
                   <span class="font-bold text-lg text-[#fdbb03] ">Cursos Complementares</span>                
                   <span class="font-bold text-lg text-[#fdbb03] ml-10"><i class="bi bi-mortarboard-fill"></i></span>
@@ -288,7 +296,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col">
+              <div class="col animateRight">
                 <div class="flex justify-center">
                   <span class="font-bold text-lg text-[#fdbb03] ">SoftSkills</span>                
                   <span class="font-bold text-lg text-[#fdbb03] ml-10"><i class="bi bi-mortarboard-fill"></i></span>
@@ -330,6 +338,7 @@
       </div>     
     </div>
   </section>
+
   <section id="experiencias" class="py-16 flex justify-center items-center dark:bg-[#0B0D0C] bg-[#D5D5D5]">
     <div class="container h-auto">
       <div class="px-8">
@@ -600,6 +609,7 @@
       </span>
     </div>
   </section>
+
   <!--  dark:bg-[#04162E] bg-[#0C3D68] -->
   <section id="contatos" class="dark:bg-[#0B0D0C] bg-[#D5D5D5] text-white">
     <div class="container mx-auto p-8">
@@ -634,10 +644,12 @@
     </div>
   </footer>
 
+  <a href="#home" class="dark:bg-transparent hover:bg-gray-200 outline-none animate-bounce ring-1 ring-[#ebfffe] rounded-full py-2 px-3 absolute bottom-5 right-5 shadow-lg" >
+    <span ><i class="bi bi-chevron-up text-sm text-[#ebfffe] lg:text-lg font-bold"></i></span>
+  </a>
 </body>
 
-<script>
-    
+<script>    
 
     // Função para alternar o modo escuro e armazenar no local storage
     function toggleDarkMode() {
