@@ -583,10 +583,10 @@ nav a.active {
   --bubble-sway-type: sway-right-to-left;
 } */
 
-.sobreMim .bubble {
+.tec .bubble {
   position: absolute;
   left: var(--bubble-left-offset);
-  bottom: -75%;
+  top: -90%;
   display: block;
   width: var(--bubble-radius);
   height: var(--bubble-radius);
@@ -597,14 +597,9 @@ nav a.active {
   /* border-radius: 50%; Pode ser removido se a imagem não precisar ser circular */
 }
 
-/* .sobreMim .bubble::before {
-  content: none;
-  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
-} */
-
-/* Exemplo de como adicionar imagens para os bubbles */
-.sobreMim .bubble:nth-child(1) {
+.tec .bubble:nth-child(1) {
   --bubble-radius: 8vw;
+  /* --bubble-left-offset: 20vw; */
   --bubble-float-duration: 15s;
   --bubble-sway-duration: 10s;
   --bubble-float-delay: 0s;
@@ -615,8 +610,8 @@ nav a.active {
   opacity: 0.5;
 }
 
-.sobreMim .bubble:nth-child(2) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(2) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 10s;
   --bubble-sway-duration: 6s;
   --bubble-float-delay: 1s;
@@ -624,11 +619,11 @@ nav a.active {
   --bubble-sway-type: sway-left-to-right;
   background-image: url('./img/cshap.png');
   background-size: 50% 50%;
-  opacity:  0.5;
+  opacity:  0.75;
 }
 
-.sobreMim .bubble:nth-child(3) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(3) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 18s;
   --bubble-sway-duration: 4.5s;
   --bubble-float-delay: 0.5s;
@@ -639,8 +634,8 @@ nav a.active {
   opacity:  0.5;
 }
 
-.sobreMim .bubble:nth-child(4) {
-  --bubble-radius: 5vw;
+.tec .bubble:nth-child(4) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 3.5s;
   --bubble-float-delay: 2.5s;
@@ -648,11 +643,11 @@ nav a.active {
   --bubble-sway-type: sway-left-to-right;
   background-image: url('./img/Java.webp');
   background-size: 50% 50%;
-  opacity:  0.5;
+  opacity:  0.75;
 }
 
-.sobreMim .bubble:nth-child(5) {
-  --bubble-radius: 5vw;
+.tec .bubble:nth-child(5) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 8.9s;
   --bubble-sway-duration: 3.5s;
   --bubble-float-delay: 2.5s;
@@ -663,8 +658,8 @@ nav a.active {
   opacity:  0.5;
 }
 
-.sobreMim .bubble:nth-child(6) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(6) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 4.5s;
   --bubble-float-delay: 0.5s;
@@ -672,11 +667,11 @@ nav a.active {
   --bubble-sway-type: sway-right-to-left;
   background-image: url('./img/mysql.png');
   background-size: 50% 50%;
-  opacity:  0.5;
+  opacity:  0.75;
 }
 
-.sobreMim .bubble:nth-child(7) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(7) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 15s;
   --bubble-sway-duration: 1.5s;
   --bubble-float-delay: 3.5s;
@@ -687,8 +682,8 @@ nav a.active {
   opacity:  0.5;
 }
 
-.sobreMim .bubble:nth-child(8) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(8) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 13s;
   --bubble-sway-duration: 3.5s;
   --bubble-float-delay: 0.1s;
@@ -699,8 +694,8 @@ nav a.active {
   opacity:  0.5;
 }
 
-.sobreMim .bubble:nth-child(9) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(9) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 2.5s;
   --bubble-float-delay: 3.1s;
@@ -708,11 +703,11 @@ nav a.active {
   --bubble-sway-type: sway-left-to-right;
   background-image: url('./img/postgress.webp');
   background-size: 50% 50%;
-  opacity:  0.5;
+  opacity:  0.;
 }
 
-.sobreMim .bubble:nth-child(10) {
-  --bubble-radius: 6vw;
+.tec .bubble:nth-child(10) {
+  --bubble-radius: 8vw;
   --bubble-float-duration: 17s;
   --bubble-sway-duration: 2.9s;
   --bubble-float-delay: 2.7s;
@@ -723,30 +718,13 @@ nav a.active {
   opacity:  0.5;
 }
 
-/* Estilos para telas menores (ex.: dispositivos móveis) */
-@media (max-width: 768px) {
-  .sobreMim .bubble:nth-child(10) {
-    background-size: 80% 80%; /* Aumenta a imagem em telas menores */
-  }
-}
 
-/* Estilos para telas muito pequenas (ex.: celulares) */
-@media (max-width: 480px) {
-  .sobreMim .bubble:nth-child(10) {
-    background-size: 100% 100%; /* Ainda maior em telas bem pequenas */
-  }
-}
-
-
-/* Continue manualmente para cada bolha como no exemplo acima */
-
-/* Animações keyframes */
 @keyframes float-up {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100vh); /* Sai pela parte superior da tela */
+    transform: translateY(120vh); /* Sai pela parte superior da tela */
   }
 }
 
