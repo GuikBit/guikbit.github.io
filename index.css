@@ -847,9 +847,7 @@ nav a.active {
   
 }
 
-.sobre{
-  z-index: 999;
-}
+
 
 @keyframes float-up {
   0% {
