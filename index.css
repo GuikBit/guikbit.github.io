@@ -723,6 +723,20 @@ nav a.active {
   opacity:  0.5;
 }
 
+/* Estilos para telas menores (ex.: dispositivos móveis) */
+@media (max-width: 768px) {
+  .sobreMim .bubble:nth-child(10) {
+    background-size: 80% 80%; /* Aumenta a imagem em telas menores */
+  }
+}
+
+/* Estilos para telas muito pequenas (ex.: celulares) */
+@media (max-width: 480px) {
+  .sobreMim .bubble:nth-child(10) {
+    background-size: 100% 100%; /* Ainda maior em telas bem pequenas */
+  }
+}
+
 
 /* Continue manualmente para cada bolha como no exemplo acima */
 
