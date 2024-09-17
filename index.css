@@ -836,7 +836,16 @@ nav a.active {
   opacity: 0.5;
 }
 
+@media (prefers-color-scheme: dark) {
+  .tec .bubble:nth-child(9) {
+  background-image: url('./img/github_white.png'); 
+  }
 
+  .tec .bubble:nth-child(20) {
+    background-image: url('./img/github_white.png');
+  }
+  
+}
 
 .sobre{
   z-index: 999;
